@@ -1,2 +1,2 @@
-config SHIELD_RGBLED_ADAPTER
-    def_bool $(shields_list_contains,rgbled_adapter)
+config SHIELD_RGB_UNDERGLOW
+    def_bool $(shields_list_contains,rgb_underglow)
