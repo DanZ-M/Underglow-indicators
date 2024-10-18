@@ -1,7 +1,7 @@
-name: zmk-rgbled-widget
+name: zmk-rgb-underglow
 build:
   cmake: .
-  kconfig: Kconfig
+  kconfig: .
   settings:
     board_root: .
     dts_root: .
