@@ -1,4 +1,4 @@
-target_sources_ifdef(CONFIG_rgb_underglow app PRIVATE src/rgb_underglow.c)
-target_sources_ifdef(CONFIG_ZMK_BEHAVIOR_RGBLED_WIDGET app PRIVATE src/behaviors/behavior_rgbled_widget.c)
+target_sources_ifdef(CONFIG_RGB_UNDERGLOW app PRIVATE src/rgb_underglow.c)
+target_sources_ifdef(CONFIG_ZMK_BEHAVIOR_RGB_UNDERGLOW app PRIVATE src/behaviors/behavior_rgb_underglow.c)
 
 zephyr_include_directories(include)
