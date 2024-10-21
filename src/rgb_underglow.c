@@ -162,7 +162,7 @@ static const struct led_rgb status_color_usb_active = HEXRGB(0xff, 0xff, 0xff); 
 static const struct led_rgb status_color_usb_connected = HEXRGB(0x00, 0xff, 0x68);    // dull-green
 static const struct led_rgb status_color_usb_powered = HEXRGB(0xff, 0x00, 0x00);      // red
 static const struct led_rgb status_color_usb_disconnected = HEXRGB(0x6b, 0x1f, 0xce); // lilac
-static const struct led_rgb status_color_output_fallback = HEXRGB(0xff, 0x00, 0x00);  // red
+static const struct led_rgb status_color_output_fallback = HEXRGB(0xff, 0xff, 0x00);  // red
 
 static uint16_t status_animation_step;
 
@@ -390,7 +390,7 @@ static void zmk_rgb_underglow_status_update(struct k_timer *timer) {
     if (!state.is_status_indicators_active)
         return;
     status_animation_step++;
-    if (status_animation_step > (10000 / 25)) {
+    if (status_animation_step > (100 / 25)) {
         state.is_status_indicators_active = false;
         k_timer_stop(&underglow_status_update_timer);
     }
