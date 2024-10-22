@@ -1,4 +1,4 @@
-name: zmk-rgbled-widget
+name: zmk-rgb-widget
 build:
   cmake: .
   kconfig: Kconfig
