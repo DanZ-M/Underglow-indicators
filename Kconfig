@@ -1,11 +1,5 @@
 config RGB_UNDERGLOW_WIDGET
     bool "Enable RGB LED widget for showing battery and output status"
-config ZMK_HID_CONSUMER_REPORT_USAGES_BASIC
-    bool "Basic Consumer HID Usage Support"
-    help
-      Enable Consumer usage ID values up to "Playback Speed - Slow" to be sent to
-      hosts. Allows for broader compatibability with more host OSes.
-
 
 config ZMK_HID_INDICATORS
     bool "HID Indicators"
